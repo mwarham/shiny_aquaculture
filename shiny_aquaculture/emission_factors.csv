@@ -1,0 +1,87 @@
+assessment,farm_type,stage,process,input,drop_down,emission_factor,unit,reference_year,min,max,avg,step_value,unit
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,infrastructure and equipment electricity,none,0,kg CO2/kWh,NA,0,0,0,0,kWh
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,infrastructure and equipment electricity,US Grid Mix,0.476,kg CO2/kWh,2018,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,infrastructure and equipment electricity,EU-28 Grid Mix,0.444,kg CO2/kWh,2013,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,infrastructure and equipment electricity,UK Grid Mix,0.524,kg CO2/kWh,2013,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,infrastructure and equipment electricity,Japan Grid Mix,0.673,kg CO2/kWh,2013,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,infrastructure and equipment electricity,China Grid Mix,0.902,kg CO2/kWh,2011,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,fuel to harvest fertile material,none,0,kg CO2/l,NA,0,0,0,0,liter
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,fuel to harvest fertile material,US diesel,3.2,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,propagule production,vegetative cutting,fuel to harvest fertile material,US gasoline,3.0,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,propagule production,nursery,fuel to harvest fertile material,none,0.0,kg CO2/l,NA,0,0,0,0,liter
+seaweed cultivation and harvest,long-line,propagule production,nursery,fuel to harvest fertile material,US diesel,3.2,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,propagule production,nursery,fuel to harvest fertile material,US gasoline,3.0,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,propagule production,nursery,nursery and equipment electricity use,none,0.0,kg CO2/kWh,NA,0,0,0,0,kWh
+seaweed cultivation and harvest,long-line,propagule production,nursery,nursery and equipment electricity use,US Grid Mix,0.476,kg CO2/kWh,2018,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,nursery,nursery and equipment electricity use,EU-28 Grid Mix,0.444,kg CO2/kWh,2013,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,nursery,nursery and equipment electricity use,UK Grid Mix,0.524,kg CO2/kWh,2013,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,nursery,nursery and equipment electricity use,Japan Grid Mix,0.673,kg CO2/kWh,2013,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,nursery,nursery and equipment electricity use,China Grid Mix,0.902,kg CO2/kWh,2011,1,960,22.4,1,kWh
+seaweed cultivation and harvest,long-line,propagule production,nursery,nutrient medium,none,0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,nutrient medium,ammonium nitrate,3.2,kg CO2/kg,,1,1000,500.5,1,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,nutrient medium,sodium phosphate,0.05,kg CO2/kg,,1,1000,500.5,1,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,culture string,none,0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,culture string,polyamide fibers,10.7,kg CO2/kg,2016,25,50,37.5,1,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,culture string,PP fibers,2.31,kg CO2/kg,2016,25,50,37.5,1,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,culture string,PET fibers,4.67,kg CO2/kg,2016,25,50,37.5,1,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,culture string,RPET fibers,0.98,kg CO2/kg,,25,50,37.5,1,kg
+seaweed cultivation and harvest,long-line,propagule production,nursery,culture string,nylon 66,8.04,kg CO2/kg,2015,25,50,37.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,long-line,none,0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,long-line,polyamide fibers,10.7,kg CO2/kg,2016,111,720,415.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,long-line,PP fibers,2.31,kg CO2/kg,2016,111,720,415.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,long-line,PET fibers,4.67,kg CO2/kg,2016,111,720,415.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,long-line,RPET fibers,0.98,kg CO2/kg,,111,720,415.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,long-line,nylon 66,8.04,kg CO2/kg,2015,111,720,415.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,electricity for equipment,none,0,kg CO2/kWh,NA,0,0,0,0,kWh
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,electricity for equipment,US Grid Mix,0.476,kg CO2/kWh,2018,1,960,22.4,,kWh
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,electricity for equipment,EU-28 Grid Mix,0.444,kg CO2/kWh,2013,1,960,22.4,,kWh
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,electricity for equipment,UK Grid Mix,0.524,kg CO2/kWh,2013,1,960,22.4,,kWh
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,electricity for equipment,Japan Grid Mix,0.673,kg CO2/kWh,2013,1,960,22.4,,kWh
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,electricity for equipment,China Grid Mix,0.902,kg CO2/kWh,2011,1,960,22.4,,kWh
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,none,0,kg CO2/l,NA,0,0,0,0,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,US diesel,3.2,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,US gasoline,3.0,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,US natural gas mix,0.00249,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,EU-28 natural gas mix,0.00239,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,US Propane,1.82,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,seeding,fuel for equipment,EU-28 Propane,1.79,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,fuel for transport,none,0.00,kg CO2/l,NA,0,0,0,0,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,fuel for transport,US diesel,3.2,kg CO2/l,2013,0.001,0.08,0.046432353,0.001,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,fuel for transport,US gasoline,3.0,kg CO2/l,2013,0.001,0.08,0.046432353,0.001,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,support lines,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,support lines,polyamide fibers,10.7,kg CO2/kg,2016,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,support lines,PP fibers,2.31,kg CO2/kg,2016,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,support lines,PET fibers,4.67,kg CO2/kg,2016,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,support lines,RPET fibers,0.98,kg CO2/kg,,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,support lines,nylon 66,8.04,kg CO2/kg,2015,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,anchors,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,anchors,concrete,0.13,kg CO2/kg,2016,952,6099,2668,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,anchors,steel,2.5,kg CO2/kg,2007,952,6099,2668,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,anchors,chromium steel,4.2,kg CO2/kg,2015,952,6099,2668,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoys,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoys,polyamide fibers,10.7,kg CO2/kg,2016,33,53,43,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoys,PP fibers,2.31,kg CO2/kg,2016,33,53,43,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoys,PET fibers,4.67,kg CO2/kg,2016,33,53,43,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoys,RPET fibers,0.98,kg CO2/kg,,33,53,43,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoys,PVC,2.9,kg CO2/kg,2005,33,53,43,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,chains,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,chains,steel,2.5,kg CO2/kg,2007,38.4,144,91.2,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,chains,chromium steel,4.2,kg CO2/kg,2015,38.4,144,91.2,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy rope,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy rope,polyamide fibers,10.7,kg CO2/kg,2016,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy rope,PP fibers,2.31,kg CO2/kg,2016,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy rope,PET fibers,4.67,kg CO2/kg,2016,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy rope,RPET fibers,0.98,kg CO2/kg,,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy rope,nylon 66,8.04,kg CO2/kg,2015,10,50,21.5,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy weights,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy weights,steel,2.5,kg CO2/kg,2007,10,144,77,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,ocean deployment,buoy weights,chromium steel,4.2,kg CO2/kg,2015,10,144,77,1,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,monitoring,fuel for monitoring,none,0.0,kg CO2/kg,NA,0,0,0,0,kg
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,monitoring,fuel for monitoring,US diesel,3.2,kg CO2/l,2013,0.8,1.2,1,0.01,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,monitoring,fuel for monitoring,US gasoline,3.0,kg CO2/l,2013,0.8,1.2,1,0.01,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,harvest,fuel for harvest vessel,none,0.0,kg CO2/l,NA,0,0,0,0,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,harvest,fuel for harvest vessel,US diesel,3.2,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,harvest,fuel for harvest vessel,US gasoline,3.0,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,harvest,fuel for harvest equipment,none,0.0,kg CO2/l,NA,0,0,0,0,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,harvest,fuel for harvest equipment,US diesel,3.2,kg CO2/l,2013,5,10,7.5,0.1,liter
+seaweed cultivation and harvest,long-line,ocean cultivation and harvest,harvest,fuel for harvest equipment,US gasoline,3.0,kg CO2/l,2013,5,10,7.5,0.1,liter

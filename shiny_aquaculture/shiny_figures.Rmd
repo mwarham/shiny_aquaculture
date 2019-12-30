@@ -1,0 +1,53 @@
+---
+title: "shiny_figures"
+author: "Darcy"
+date: "12/10/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#Libraries
+library(tidyverse)
+
+# data
+# this will be the output from whatever the farm setup comes up with
+
+```
+
+
+```{r data setup, include=FALSE}
+
+# output data goes here given any given farm setup (might be two separate things for cultivation and harvest)
+# mutate a column that is perc_gwp to find the % contribution of each input to the total GWP for a donut plot
+
+```
+
+
+```{r figures}
+# donut plots (one for each of the two parts of the model)
+output_1 %>%
+  ggplot(aes(x=2, y=perc_gwp, fill=input_name)) +
+	geom_bar(stat=‘identity’, color=‘white’) +
+	coord_polar(theta=‘y’, start=0) +
+	geom_text(aes(y=lab.ypos, label = input_name), color= “white”) +
+	scale_fill_manual(values=mycols) +
+	theme_void() +
+	xlim(0.5,2.5)
+
+# propellar plot
+output_1 %>%
+  ggplot(aes(x=input_name, y=gwp_value)) +
+  geom_bar(stat='identity') + # probably want to add fill/color 
+#  ylim() + # if necessary 
+  theme_minimal() +
+  theme(axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank(),
+    plot.margin = unit(rep(-2,4), "cm")) + #removes weird spacing; may not be necessary
+    coord_polar(start=0)
+
+```
+
+

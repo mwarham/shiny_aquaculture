@@ -1,0 +1,166 @@
+---
+title: "Data test"
+author: "Matthew Warham"
+date: "12/5/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+library(magrittr)
+library(qwraps2)
+library(expss)
+library(reactable)
+library(Hmisc)
+
+farm_data <- read_csv("./pre-set_scenarios_LCI_matt.csv")
+
+emissions_values <- read_csv("./Emission-Factors_final.csv")
+
+capitalize(farm_data$process)
+view(farm_data)
+
+emissions_values_edit <- emissions_values %>% 
+  select (c("drop_down", "emission_factor")) %>% 
+  rename("input_category" = drop_down) %>% 
+  distinct()
+
+farm_data_edit <- farm_data %>% 
+  select(c("farm_name", "stage", "process", "input", "gwp_mt_seaweed", "total_gwp_farm", "stage_total", "process_total")) %>% 
+  rename("Farm Name" = farm_name,
+         "Life Cycle Stage" = stage,
+         "Process" = process,
+         "Input" = input) %>% 
+  mutate(Process = capitalize (Process)) %>% 
+  mutate(Input = capitalize (Input)) %>% 
+  mutate(total_gwp_farm = round(total_gwp_farm,0))
+  
+
+View(farm_data_edit)
+
+farm_table <- reactable(
+  farm_data_edit,
+  groupBy = c("Farm Name", "Life Cycle Stage", "Process")
+  )
+ farm_table
+
+Farm1 <- farm_data %>% 
+  filter(farm_name == "Farm 1") %>% 
+  group_by(stage, process, input, gwp_mt_seaweed) %>% 
+  summarize(total_gwp_farm = total_gwp_farm,
+            stage_total = sum(stage_total),
+            process_total = sum(process_total))
+
+view(Farm1)
+
+
+# 	input
+# Propagules	veg_grid_type
+# 	veg_fuel_type
+# 	nursery_fuel_type
+# 	nursery_grid_type
+# 	nursery_nutrient_type
+# 	culture_string
+# deployment	long_line
+# 	seeding_grid_type
+# 	seeding_fuel_type
+# 	deployment_fuel_type
+# 	support_line
+# 	anchor
+# 	buoy
+# 	chain
+# 	buoy_rope
+# 	monitoring_fuel_type
+# 	harvest_fuel_type
+
+df <- data.frame(
+  selected_input_name = c("US grid mix", "US Diesel", "US Diesel", "US grid mix"),
+  perc_gwp = c(46.599009,3.468151,4.264120,45.668721),
+  gwp_value = c(73,45,23,109),
+  round(perc_gwp, digits = 0)
+  )
+head(df)
+
+df <- round("perc_gwp", digits =0)
+
+## Sunburst chart
+
+df2 <- df
+
+propeller <- plot_ly() %>% 
+  add_trace(
+    ids = df$selected_input_name,
+    labels = df$selected_input_name,
+    parents
+  )
+                        labels = selected_input_name, 
+                        parents = stage,
+                        values = perc_gwp,
+                        type = 'sunburst',
+                        #branchvalues = emission_raw$gwp_total
+                      )
+
+                      # group_by(selected_input_name) %>% 
+                      # plot_ly(
+                      #   labels = selected_input_name, 
+                      #   parents = stage,
+                      #   values = perc_gwp,
+                      #   type = 'sunburst',
+                      #   #branchvalues = emission_raw$gwp_total
+                      # )
+
+
+pie <- bp + coord_polar("y", start=0)
+pie
+
+output_1 <- df %>% 
+  ggplot(aes(x=2, y=perc_gwp, fill=selected_input_name)) +
+  geom_bar(stat = "identity", color= "white") +
+  ggplot2::coord_polar(theta = "y", start=0) +
+  #geom_text(aes(y=lab.ypos, label = input_name), color= "white") +
+  #scale_fill_manual(values=mycols) +
+  theme_void() +
+  xlim(0.5,2.5)
+
+output_1 %>% 
+          ggplot(aes(x=2, y=perc_gwp, fill=selected_input_name)) +
+          geom_bar(stat = "identity", color= "white") +
+          ggplot2::coord_polar(theta = "y", start=0) +
+          #geom_text(aes(y=lab.ypos, label = input_name), color= "white") +
+          #scale_fill_manual(values=mycols) +
+          theme_void() +
+          xlim(0.5,2.5)
+output_1
+
+# donut plots (one for each of the two parts of the model)
+output_darcey <-
+  ggplot(df, aes(x=2, y=perc_gwp, fill=selected_input_name)) +
+	geom_bar(stat='identity', color='white') +
+	coord_polar(theta='y', start=0) +
+	#geom_text(aes(y=lab.ypos, label = input_name), color= "white") +
+	#scale_fill_manual(values=mycols) +
+	theme_void() +
+	xlim(0.5,2.5)
+
+output_darcey
+
+
+ #propellar plot
+output_2 <- 
+  ggplot(df, aes(x=selected_input_name, y=gwp_value, fill= selected_input_name)) +
+  geom_bar(stat='identity') + # probably want to add fill/color 
+#  ylim() + # if necessary 
+  theme_minimal() +
+  theme(axis.text = element_blank(),
+     axis.title = element_blank(),
+     panel.grid = element_blank(),
+     plot.margin = unit(rep(-2,4), "cm")) + #removes weird spacing; may not be necessary
+     ggplot2::coord_polar(start=0)
+
+output_2
+```
+
